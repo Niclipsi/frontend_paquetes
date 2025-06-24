@@ -1,0 +1,131 @@
+@import url(/css/global.css);
+
+.viaje{
+    width: 100%;
+    margin-bottom: 50px;
+    min-width: var(--largo);
+    display: flex;
+    flex-direction: row;
+}
+
+.paquete-info{
+    flex: 0 0 60%; 
+    border-radius: 10px 0;
+    background-color: var(--color-fondo);
+    border-right: 2px solid var(--color-fuente);
+    border-bottom: 2px solid var(--color-fuente);
+}
+.paquete-info h1{
+    display: none;
+}
+.paquete-info > div{
+    position: relative;
+    height: 400px;
+}
+.paquete-info .info-botones{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+.info-botones button{
+    box-shadow: -5px -15px 15px rgb(0, 0, 0, 0.2);
+    font-size: 20px;
+    width: 130px;
+    border: none;
+    border-radius: 10px 10px 0 0;
+    padding: 10px 0;
+    background-color: var(--color-5);
+    margin-left: -10px;
+}
+.paquete-info figcaption{
+    width: 100%;
+    min-height: 300px;
+    padding: 20px 15px;
+}
+
+.info-botones .activo{
+    background-color: var(--fondo);
+    position: relative;
+    z-index: 1;
+}
+
+/**/
+.paquete-barra{
+    flex: 0 0 40%;
+    padding: 40px 20px 30px 20px; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+.paquete-barra a{
+    width: 100%;
+    text-align: center;
+}
+.paquete-barra h1{
+    margin-right: auto;
+}
+.paquete-barra .barra-info{
+    font-size: 25px;
+    border-top: 1px solid var(--color-fuente);
+    border-bottom: 1px solid var(--color-fuente);
+    width: 100%;
+    padding: 10px 5px;
+}
+.paquete h2{
+    color: var(--color-4);
+    text-align: center;
+}
+.btn-agregar{
+    width: 60px;
+    padding: 5px;
+    border: none;
+    border-radius: 10px;
+    margin-left: 10px;
+    margin-right: auto;
+    background-color: var(--fondo);
+}
+
+.btn-comprar, .btn-contactar{
+    border-radius: 10px;
+    width: 90%;
+    padding: 10px 0;
+    font-size: 25px;
+}
+.btn-comprar{
+    background-color: var(--color-3);
+    border: none;
+}
+.btn-contactar{
+    background: none;
+    outline: 2px solid var(--color-8);
+    color: var(--color-8);
+}
+
+.btn-contactar:hover{
+    background-color: var(--color-8);
+    color: var(--fondo);
+}
+
+.datos-pago{
+    border: 2px solid var(--color-fuente);
+    border-radius: 10px;
+    width: 100%;
+    min-height: 60px;
+    padding: 10px 20px;
+    position: relative;
+}
+.datos-pago figure{
+    width: 30px; height: 30px;
+    position: absolute; top: 2%; right: 2%;
+}
+
+@media (max-width: 800px) {
+    .viaje{
+        flex-direction: column;
+    }
+    .paquete-info h1{
+        display: block;
+        margin: 20px 0 10px 10px;
+    }
+}

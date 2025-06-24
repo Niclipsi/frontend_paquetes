@@ -1,0 +1,43 @@
+/* Color fuente */
+.azul{
+    color: var(--color-1);
+}
+.azul-oscuro{
+    color: var(--color-6);
+}
+.rojo{
+    color: var(--color-4);
+}
+
+/* Tamaño fuente */
+.fuente-grande{
+    font-size: 25px;
+}
+.fuente-mediana{
+    font-size: 24px;
+}
+.fuente-pequeña{
+    font-size: 13px;
+}
+
+/* Otros */
+.flex-centrar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.paquete{
+    box-shadow: 0px 5px 15px rgb(0, 0, 0,0.3);
+}
+
+.btn-anima:active{
+    box-shadow: 0px 0px 5px rgb(0, 0, 0,0.3) inset;
+}
+
+.btn-anima:hover{
+    border: none;
+    outline: none;
+    outline: 2px solid var(--color-fuente);
+}

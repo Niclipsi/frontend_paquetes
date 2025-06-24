@@ -1,0 +1,21 @@
+:root{
+    --largo: 600px;
+}
+:root{ /* Colores */
+    --color-fuente: #333333;
+    --fondo: #F2F2F2;
+    --color-1: #4A90E2;
+    --color-2: #F9F9F9;
+    --color-3: #F5B041;
+    --color-4: #E74C3C;
+    --color-5: #D9D9D9;
+    --color-6: #0950A4;
+    --color-7: #F3F3F3;
+    --color-8: #2ECC71;
+    --color-9: #000000;
+}
+
+@font-face { /* Fuente */
+  font-family: 'Jaro';
+  src: url('/fuentes/Jaro/Jaro-Regular-VariableFont_opsz.ttf') format('truetype');
+}

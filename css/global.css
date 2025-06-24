@@ -1,0 +1,36 @@
+@import url(layout.css);
+@import url(variables.css);
+@import url(clases.css);
+/* HTML */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Jaro';
+    color: var(--color-fuente);
+    text-decoration: none;
+}
+
+html, body {
+      overflow-x: auto;
+      background-color: var(--fondo);
+      color: var(--color-fuente);
+      height: 100%;
+      width: 100%;
+}
+
+ul{
+    list-style: none;
+}
+
+img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+button{
+    cursor: pointer;
+    border: none;
+}
+
