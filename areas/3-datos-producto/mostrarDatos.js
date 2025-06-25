@@ -24,6 +24,20 @@ export async function mostrarD() {
         const precio = document.getElementById("Sprecio");
         const inputC = document.getElementById("inputC");
         const cantidadSpan = document.getElementById("cantidadSpan");
+        const contenedor_img  = document.getElementById("contenedor-img");
+         const imagen = document.createElement("img");
+                    const imagenData = paquete.Imagen?.url;
+                    console.log(imagenData);
+                    imagen.className = 'img';
+                    if (imagenData){                
+                    imagen.src = STRAPI_HOST + imagenData;
+                    imagen.alt = "Imagen del paquete";
+                    
+                    } else{
+                         imagen.src = "/imagenes/imagenPrueba.png";
+                         imagen.alt = "Imagen no disponible";
+                    }
+        contenedor_img.appendChild(imagen);            
         descripcionPR.innerHTML = paquete.descripcion;
         nombre.innerHTML = paquete.NombreV;
         precio.innerHTML = paquete.precio;

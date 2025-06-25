@@ -1,73 +1,39 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>Sticky bottom left dentro del contenedor</title>
-<link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
 </head>
-<body class="wrapper">
-  <header>
-      <div class="logo flex-centrar">
-        <p class="fuente-grande">Paquetes Now</p>
-        <p class="azul-oscuro">Gana tus experiencias!</p>
-      </div>
-  </header>
-  
-  <section class="seccion-carrito flex-centrar">
+<body>
 
-    <div class="carrito-contenedor">
-      <ul class="carrito">
-        <li class="paquete">
-          <figure class="paquete-imagen"><img class="img" src="../imagenes/imagenPrueba.png" alt="Imagen del paquete"></figure>
-          <div class="paquete-contenido">
-            <h3 class="nombre fuente-mediana">Nombre</h3>
-            
-            <div class="paquete-info">
-              <div> <p>precio por persona</p> <p class="precio azul fuente-grande">$30.000</p> </div>
-              <p class="cantidad flex-centrar">1</p>
-            </div>
+<div class="tarjeta">
+  <img src="playa.jpg" alt="Bayahibe con Viva">
+  <div class="contenido">
 
-            <button class="btn btn-ver">Ver</button>
-          </div>
-        
-        </li>
-        <li class="paquete">
-          <figure class="paquete-imagen"><img class="img" src="../imagenes/imagenPrueba.png" alt="Imagen del paquete"></figure>
-          <div class="paquete-contenido">
-            <h3 class="nombre fuente-mediana">Nombre</h3>
-            
-            <div class="paquete-info">
-              <div> <p>precio por persona</p> <p class="precio azul fuente-grande">$30.000</p> </div>
-              <p class="cantidad flex-centrar">1</p>
-            </div>
+    <div class="etiqueta-oferta">Oferta de la semana</div>
 
-            <button class="btn btn-ver">Ver</button>
-          </div>
-        
-        </li>
-        <li class="paquete">
-          <figure class="paquete-imagen"><img class="img" src="../imagenes/imagenPrueba.png" alt="Imagen del paquete"></figure>
-          <div class="paquete-contenido">
-            <h3 class="nombre fuente-mediana">Nombre</h3>
-            
-            <div class="paquete-info">
-              <div> <p>precio por persona</p> <p class="precio azul fuente-grande">$30.000</p> </div>
-              <p class="cantidad flex-centrar">1</p>
-            </div>
-
-            <button class="btn btn-ver">Ver</button>
-          </div>
-        
-        </li>
-      </ul>
-
-      <figure class="usuario"><img class="img" src="../imagenes/user-icon.png" alt="Imagen de usuario"></figure>
-      <p class="total">Total: <span class="azul precio fuente-mediana">$60.000</span></p>
-      <button class="btn btn-comprar fuente-mediana">Comprar</button>
-
+    <div class="info-superior">
+      <span>Septiembre - 7 noches</span>
+      <span class="icono-paquete">📦 Paquete</span>
     </div>
-  </section>
+
+    <h3>Bayahibe con Viva</h3>
+
+    <p><strong>Vuelo + Hotel Viva Dominicus Palace Wyndham</strong>, Trademark All Inclusive</p>
+
+    <div class="precio">
+      <p>Precio por persona desde</p>
+      <strong>u$s 1.505</strong>
+      <BR></BR>
+      <span>Incluye impuestos, tasas y cargos</span>
+    </div>
+
+    <a id="link" href=""><button id="btn" class="btn-ver-paquete" >Ver paquete</button></a>
+  </div>
+</div>
+
 </body>
 </html>
 

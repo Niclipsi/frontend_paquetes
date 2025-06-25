@@ -3,42 +3,78 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Paquetes NOW</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styleP.css">
 </head>
 <body>
     <div id="header-container"></div>
-    <main>
-        <img src="/imagenes/decoracion/avion-papel.png" alt="Imagen avion de papel" class="img-absolute">
-        <section class="buscador">
-            <div class="titulo">
-                <p>PAQUETES</p>
-                <P>NOW</P>
-            </div>
-            <div class="buscador-input">
-                <p>Buscar por pais</p>
-                <div>
-                    <img src="/imagenes/icon/lupa-icon.png" alt="Imagen lupa" class="img">
-                    <input type="text" placeholder="Buscar...">
-                </div>
-            </div>
-        </section>
+    <section class="hero" style="background-image: url('/imagenes/fondo/fondo-cielo.jpg');">
+  <div class="hero-content">
+    <div class="titulo-box">
+      <h2>PAQUETES NOW</h2>
+      <p>Su agencia nro. 1 de viajes </p>
+    </div>
 
-        <section class="carrusel">
-            <div class="slider">
-                <img src="/imagenes/fondo/fondo-francia.jpeg" alt="Imagen" class="img">
-                <img src="/imagenes/fondo/fondo-cataratas-del-iguazu.jpeg" alt="Imagen" class="img">
-                <img src="/imagenes/fondo/fondo-machu-picchu.jpg" alt="Imagen" class="img">
-                <img src="/imagenes/fondo/fondo-santorini .jpg" alt="Imagen" class="img">
-            </div>
+    <div class="nav-tabs solo-paquete">
+      <button class="tab active">Paquetes</button>
+    </div>
+
+    <form class="buscador-form">
+      <div class="buscador-box">
+
+    <div class="input-group">
+      <label>Destino</label>
+      <div class="input-icon">
+        <img src="imagenes/icon/mapa-icon.jpg" alt="icono destino">
+        <select id="filtro-destino">
+          <option value="">Seleccione un destino</option>
+          <option value="francia">Francia</option>
+          <option value="grecia">Grecia</option>
+          <option value="argentina">Argentina</option>
+          <option value="japon">Japón</option>
+            <option value="irlanda">Irlanda</option>
+            <option value="brasil">Brasil</option>
+            <option value="estados unidos">Estados Unidos</option>
+            
+        </select>
+      </div>
+    </div>
+
+    <div class="input-group">
+      <label>Mes</label>
+      <div class="input-icon">
+        <img src="imagenes/icon/calendario.png" alt="icono calendario">
+        <select>
+          <option value="">Mes deseado</option>
+          <option value="enero">Enero</option>
+          <option value="febrero">Febrero</option>
+        </select>
+      </div>
+    </div>
+
+    <button type="submit" id="btnbuscar" class="btn-buscar">Buscar</button>
+  </div>
+    </form>
+  </div>
+</section>
+
+
+    <section style="padding: 2rem;">
+
+        <section class="contenedor" id="section">
+            <h1 id="Titulo_h1" class="fuente-grande">
+                <span id="titulo_paquete" class="paquete-nombre"></span>
+            </h1>
+            <section id="lista-paquetes" class="lista-paquetes">
+
+            </section>
         </section>
-        <div class="explorar">
-            <p>No sabes que buscar?</p>
-            <a href="/areas/2-lista-paquetes/index.html"><button class="btn-explorar btn-anima">Explorar</button></a>
-        </div>
-    </main>
+    </section>
+
+    <!-- SCRIPTS -->
     <script src="script.js"></script>
-    <script src="CambiarB.js"></script>
-    <script src="/componentes/cargarHeader.js"></script>
+    <script src="/componentes/script.js"></script>
+    <script type="module" src="/AgregarPaquetes.js"></script>
 </body>
 </html>

@@ -1,49 +1,82 @@
-header {
-    width: 100%;
-    min-width: var(--largo);
-    height: 80px;
-    padding: 10px 50px;
-    display: flex;
-    align-items: end;
-    gap: 20px;
-    border-bottom: var(--color-3) 5px solid;
-    background-color: var(--color-1);
-}
 
-header .ico-usuario{
-    border: var(--color-fuente) 3px solid;
-    width: 60px;
-    height: 60px;
-    padding: 4px;
+ 
+header{
     background-color: var(--fondo);
-    border-radius: 100px;
-}
-header .ico-carrito{
-    border: none;
-    width: 50px;
-    padding: 5px;
-    border-radius: 10px;
-    background-color: unset;
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 10px;
+    padding-left: 200px;
+
 }
 
-header .cerrar{
-    font-size: 15px;
-    border: none;
-    border-radius: 10px;
-    padding: 5px;
-    background-color: var(--color-3);
+header .filtrar{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: end;
+    gap: 30px;
+    margin-bottom: 20px;
+}
+.filtrar figure{
+    width: 30px;
+    height: 30px;
     cursor: pointer;
-    margin-left: auto;
+}
+.filtrar figcaption{
+   
+    text-align: center;
+    width: 100%;
+}
+.filtrar .activo{
+    border-bottom: 3px solid black;
 }
 
-header .ico-usuario:hover{
-    transform: translateY(-3px);
+header .usuario{
+    display: flex;
+    justify-content: end;
+    border-radius:  0 0 0 25px;
+    align-items: center;
+    background-color: var(--color-1);
+    width: 50%;
+    
 }
-header .ico-carrito:hover{
-    transform: translateY(-3px);
+#contacto{
+    text-align: end;
+    margin-right: 30px;
+    font-size: 25px;
+}
+.elementos{
+    display: flex;
+    justify-content: start;
+    background-color: #e2e2e2;;
+    height: 100%;
+    width: 70%;
+    align-items: center;
+
+    padding: 0px 0px 10px 20px;
+    gap: 20px;
+}
+.logo{
+    margin-right: 300px;
+    font-size: 60px;
 }
 
-header .cerrar:hover{
-    background-color: var(--color-4);
-    transform: translateY(-3px);
+#lupa, #boton-usuario, #carrito-usuario{
+    background: none;
+    height: 100%;
+}
+
+.linea{
+    border: 1px solid black;
+    height: 30px;
+}
+#lupa{
+    width: 20px;
+}
+#boton-usuario{
+    width: 40px;
+}
+#carrito-usuario{
+    width: 40px;
+    height: 40px;
 }

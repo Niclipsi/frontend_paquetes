@@ -32,7 +32,8 @@ function confirmar() {
     const cantidadT = parseFloat(localStorage.getItem("precioTpaquete"));
     const nombre = document.getElementById("nombre").textContent;
     const precio = document.getElementById("Sprecio").textContent;
-const inputC = document.getElementById("inputC").value;
+    const inputC = document.getElementById("inputC").value;
+    const figure  = document.getElementById("contenedor-id");
 console.log("Cantidad ingresada:", inputC); 
  if(!isNaN(inputC) && inputC > 0){   
     const index = datos.findIndex(item => item.id === id); 
