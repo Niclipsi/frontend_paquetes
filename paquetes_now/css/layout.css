@@ -1,0 +1,82 @@
+
+ 
+header{
+    background-color: var(--fondo);
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 10px;
+    padding-left: 200px;
+
+}
+
+header .filtrar{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: end;
+    gap: 30px;
+    margin-bottom: 20px;
+}
+.filtrar figure{
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+}
+.filtrar figcaption{
+   
+    text-align: center;
+    width: 100%;
+}
+.filtrar .activo{
+    border-bottom: 3px solid black;
+}
+
+header .usuario{
+    display: flex;
+    justify-content: end;
+    border-radius:  0 0 0 25px;
+    align-items: center;
+    background-color: var(--color-1);
+    width: 50%;
+    
+}
+#contacto{
+    text-align: end;
+    margin-right: 30px;
+    font-size: 25px;
+}
+.elementos{
+    display: flex;
+    justify-content: start;
+    background-color: #e2e2e2;;
+    height: 100%;
+    width: 70%;
+    align-items: center;
+
+    padding: 0px 0px 10px 20px;
+    gap: 20px;
+}
+.logo{
+    margin-right: 300px;
+    font-size: 60px;
+}
+
+#lupa, #boton-usuario, #carrito-usuario{
+    background: none;
+    height: 100%;
+}
+
+.linea{
+    border: 1px solid black;
+    height: 30px;
+}
+#lupa{
+    width: 20px;
+}
+#boton-usuario{
+    width: 40px;
+}
+#carrito-usuario{
+    width: 40px;
+    height: 40px;
+}

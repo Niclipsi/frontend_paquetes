@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Sticky bottom left dentro del contenedor</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="header-container"></div>
+  
+  <section class="seccion-carrito">
+
+    <div class="carrito-contenedor">
+      <section id="carrito" class="carrito">
+        
+      </section>
+
+      <p class="total">Total: <span  id="total" class="azul precio fuente-mediana paquetes-total"></span></p>
+      <button id="subir" class="btn-comprar btn-anima">Comprar</button>      
+    </div>
+  </section>
+  <div id="modalPago" class="modal-pago oculto">
+  <div class="modal-contenido">
+    <h2>Datos de la Tarjeta</h2>
+    <form id="formularioPago">
+      <label>Nombre en la tarjeta</label>
+      <input id="nombre_tarjeta" type="text" placeholder="Ej: Juan Pérez" required />
+      
+      <label>Número de tarjeta</label>
+      <input id="num_tarjeta" type="text" maxlength="16" placeholder="•••• •••• •••• ••••" required />
+      
+      <label>Vencimiento</label>
+      <input id="vencimiento" type="text" placeholder="MM/AA" required />
+      
+      <label>CVV</label>
+      <input id="CVV" type="text" maxlength="4" placeholder="123" required />
+      
+      <button type="submit" id="confirmarpago" class="btn-confirmar">Confirmar pago</button>
+      <button type="button" id="cerrarModal" class="btn-cancelar">Cancelar</button>
+    <script src="../../componentes/cargarHeader.js"></script>
+  <script src="../4-carrito-compras/mostrarDatos.js"></script>
+  <script src="Tarjeta.js"></script>
+  
+    </form>
+  </div>
+</div>
+</body>
+</html>
+

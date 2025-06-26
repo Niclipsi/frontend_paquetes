@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body >
+    <div id="header-container"></div>
+    <section class="viaje">
+        <figure class="paquete-info">
+            <h1>Nombre*</h1>
+            <div id="contenedor-img">                
+                <div class="info-botones">
+                    <button class="activo">Descripcion</button>
+                    <button>Vuelos</button>
+                    <button>Hoteles</button>
+                </div>
+            </div>
+            <figcaption id="descripcionPR">
+                
+            </figcaption>
+        </figure>
+        <div class="paquete-barra">
+            <h1 id="nombre"></h1>
+            <div class="barra-info">
+                <p>Precio por persona: <span id="Sprecio"></span></p>
+                <p>Personas: <input min="1" id="inputC" type="number"></p>
+                <p>Precio total: $<span id="cantidadSpan"></span></p>
+            </div>
+            <h2 class="rojo">¡Vive tu experiencia!</h2>
+            <a><button id="botonComprar" class="btn-comprar btn-anima">Comprar</button></a>
+            <a href="#"><button class="btn-contactar btn-anima">Contactar</button></a>
+            <button class="btn-agregar btn-anima"><img src="/imagenes/icon/carrito-plus-icon.png" alt="Agregar al carrito" class="img"></button>
+
+            <div class="datos-pago">
+                <figure><img src="/imagenes/icon/tarjeta-icon.png" alt="Icono" class="img"></figure>
+                <h3>Aceptamos</h3>
+                <p>jdi Lorem ipsum dolor, sit amet consectetur adipisicing elit. Perspiciatis dolore ipsum ipsa consequuntur natus quae vel sapiente nulla expedita in sint pariatur qui id, minima unde tenetur exercitationem. Delectus, sit?</p>
+            </div>
+        </div>
+    </section>
+    <script src="../../componentes/cargarHeader.js"></script>  
+    <script src="script.js"></script>
+    <script type="module" src="../3-datos-producto/agregarDatos_Storage.js"></script>
+</body>
+</html>
